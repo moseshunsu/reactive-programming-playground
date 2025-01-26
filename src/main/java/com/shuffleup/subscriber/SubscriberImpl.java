@@ -31,7 +31,7 @@ public class SubscriberImpl implements Subscriber<String> {
 
     @Override
     public void onComplete() {
-        log.info("completed");
+        log.info("completed!");
     }
 
 }
