@@ -1,7 +1,7 @@
-package com.shuffleup;
+package com.hts.sec01;
 
-import com.shuffleup.publisher.PublisherImpl;
-import com.shuffleup.subscriber.SubscriberImpl;
+import com.hts.sec01.publisher.PublisherImpl;
+import com.hts.sec01.subscriber.SubscriberImpl;
 
 import java.time.Duration;
 

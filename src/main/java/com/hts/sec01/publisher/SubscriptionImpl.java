@@ -1,4 +1,4 @@
-package com.shuffleup.publisher;
+package com.hts.sec01.publisher;
 
 import com.github.javafaker.Faker;
 import org.reactivestreams.Subscriber;

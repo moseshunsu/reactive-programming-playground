@@ -1,4 +1,4 @@
-package com.shuffleup.subscriber;
+package com.hts.sec01.subscriber;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
