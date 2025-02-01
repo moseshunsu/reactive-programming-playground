@@ -4,6 +4,8 @@ import com.github.javafaker.Faker;
 import org.reactivestreams.Subscriber;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
+
 public class Util {
 
     private static final Faker faker = Faker.instance();
@@ -20,13 +22,12 @@ public class Util {
         return faker;
     }
 
-    public static void main(String[] args) {
-
-        var mono = Mono.just(1);
-
-        mono.subscribe(subscriber("sub1"));
-        mono.subscribe(subscriber("sub2"));
-
+    public static void sleepSeconds(int seconds){
+        try {
+            Thread.sleep(Duration.ofSeconds(seconds));
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
